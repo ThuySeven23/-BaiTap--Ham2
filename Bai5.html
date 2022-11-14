@@ -6,18 +6,20 @@
 </head>
 <body>
 <script>
-    let str = prompt("Enter star name");
-    function searchStar(str) {
-        let star = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
-        let constellation = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    let str = prompt("Enter star name:");
+    function searchStar(x) {
+        let star = ['polaris', 'aldebaran', 'deneb', 'vega', 'altair', 'dubhe', 'regulus'];
+        let constellation = ['ursa minor', 'tarurus', 'cygnus', 'lyra', 'aquila', 'ursa Major', 'leo'];
+        
         for (let i = 0; i < star.length; i++){
-            if(str === star[i]){
+            if(x === star[i]){
                 return  star[i] + " in the constenllation " + constellation[i];
             }
         }
-        return str + " hasn't been found yet ";
+        return x + " hasn't been found yet ";
     }
-    alert(searchStar(str));
+    
+    document.write(searchStar(str));
 </script>
 </body>
 </html>
