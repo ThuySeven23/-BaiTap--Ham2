@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi giữa feet và meters</title>
+</head>
+<body>
+
+</body>
+<script>
+    // Hàm chuyển feet sang met
+    function feetToMet(feet) {
+        var m = 0.305 * feet;
+        return m;
+    }
+    // Hàm chuyển met sang feet
+    function metToFeet(meter) {
+        var f = 3.279 * meter;
+        return f;
+    }
+
+    var feet = +prompt("Nhap feet");
+    var meter = +prompt("Nhap meter");
+    document.write(feet + " feet = " + feetToMet(feet) + " met <br>");
+    document.write(meter + " met = " + metToFeet(meter) + " feet");
+</script>
+</html>
